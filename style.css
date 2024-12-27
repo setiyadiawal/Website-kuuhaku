@@ -1,0 +1,241 @@
+*{
+    
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header nav.navbar-container{
+    width: 100%;
+    max-width: 1150px;
+    margin-inline: auto;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    z-index: 9999;
+}
+
+header .nav-img img{
+    width: 150px;
+}
+
+header .nav-list ul{
+    display: flex;
+    gap: 2rem;
+}
+
+header .nav-list ul li{
+    list-style-type: none;
+}
+
+header .nav-list a{
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+}
+
+header .nav-list a:hover{
+    background-color: #c21010;
+    color: white;
+}
+
+header .navbar-container .nav-button button{
+    background-color: rgba(255, 0, 0, 0.26);
+    border:0;
+    padding: 0.6rem 2.2rem;
+    margin-right: 20px;
+    border-radius: 7px;    
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+header .navbar-container .nav-button button:hover{
+    cursor: pointer;
+    background-color: #c21010;
+    color: white;
+}
+
+main{
+    display: flex;
+    padding: 50px 70px;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+
+main #content{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 850px;
+    margin-left: 5%;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+    text-align: justify;
+    
+    display: flex;
+    flex-flow: column;
+    gap: 2em;
+}
+
+main #content h2{
+text-align: left;
+font-size: 1.8rem;
+}
+
+main #content article{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+main #content .featured-image{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+main aside article.author{
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35) ;
+    background-color: rgba(255, 0, 0, 0.672);;
+    max-width: 280px;
+    position: sticky;
+    top: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main aside .author header.header-aside{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+}
+
+main aside .author header.header-aside figure{
+    margin: auto;
+}
+
+main aside .author .author-img{
+    max-width: 230px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+main aside article section{
+    
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 0 1em;
+}
+
+main aside article footer.footer-aside{
+    display: flex;
+}
+
+main aside article footer.footer-aside ul{
+    margin: auto;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 3px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main aside article footer.footer-aside ul li{
+    list-style-type: none;
+    padding: 2px;
+}
+
+main aside article footer.footer-aside ul li a{
+    text-decoration: none;
+    font-size: 1.6em;
+    padding: 4px;
+    color: #ff9090;
+}
+
+main aside article footer.footer-aside ul li a:hover{
+    color: white;
+}
+
+footer .footer-body{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width:1200px) {
+    header nav.navbar-container{
+        flex-direction: column;
+    }
+
+    header nav.navbar-container ul{
+        flex-wrap: wrap;
+    }
+
+    header .navbar-container .nav-button button{
+        margin: auto;
+    }
+
+    main{
+        flex-flow: column nowrap;
+    }
+
+    main aside{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        padding-top: 20px;
+    }
+
+    header nav ul{
+        justify-content: center;
+    }
+
+    h2{
+        line-height: 1.1em;
+    }
+
+    main{
+        box-sizing: border-box;
+        padding: 30px 20px;
+    }
+
+    main #content{
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+}
